@@ -1,0 +1,128 @@
+[
+{
+"id": "V01",
+"condicion": "Contexto",
+"prioridad": "Alta",
+"hallazgo": "Marcador «resolución XX» sin completar y numeración de anexos",
+"detalle": "El texto indica que el Consejo Directivo aprobó la solicitud «mediante resolución XX» y remite a los Anexos 0.4 y 0.5, mientras el listado de anexos del contexto institucional numera 0.1, 0.2 y 0.3.",
+"pagina": "pp. 12–13",
+"accion": "Tener a mano la resolución o acta real de aprobación y la equivalencia de numeración de los anexos radicados."
+},
+{
+"id": "V02",
+"condicion": "CC2 Justificación",
+"prioridad": "Alta",
+"hallazgo": "Matriculados de primer curso: texto frente a Gráfica 1",
+"detalle": "El texto reporta 572 matriculados de primer curso (y 79 en 2023-1), pero los valores de la Gráfica 1 suman 626 (y marcan 91 en 2023-1). La selectividad (69,9 %) y la conversión (82,06 %) son consistentes con 572.",
+"pagina": "p. 26",
+"accion": "Confirmar en Q10 la cifra correcta y llevar la base lista para explicar la diferencia."
+},
+{
+"id": "V03",
+"condicion": "CC7 Profesores",
+"prioridad": "Alta",
+"hallazgo": "Gráficas 17 y 18 no cuadran entre 2021-1 y 2023-2",
+"detalle": "En esos periodos la suma de profesores por dedicación es menor que el total de profesores vinculados; desde 2024-1 coinciden (ver tabla de cuadre en esta pestaña).",
+"pagina": "p. 122",
+"accion": "Verificar con el Anexo 7.1 y preparar la explicación (por ejemplo, profesores por horas no clasificados por dedicación)."
+},
+{
+"id": "V04",
+"condicion": "CC3 Aspectos curriculares",
+"prioridad": "Media",
+"hallazgo": "Línea de inglés: seis asignaturas frente a cuatro",
+"detalle": "El texto afirma que el programa de Investigación Criminalística y Judicial contiene seis asignaturas de inglés de 2 créditos, mientras la Tabla 27 y el plan tecnológico muestran Inglés I a IV.",
+"pagina": "p. 50",
+"accion": "Aclarar qué asignaturas pertenecen al ciclo tecnológico y cuáles al profesional."
+},
+{
+"id": "V05",
+"condicion": "CC3 Aspectos curriculares",
+"prioridad": "Media",
+"hallazgo": "Créditos propedéuticos y total de 104 créditos",
+"detalle": "Se declaran 104 créditos (100 obligatorios y 4 electivos), pero también 4 créditos propedéuticos «no obligatorios» para el título ubicados en 6.º semestre. No es claro si están incluidos en los 104.",
+"pagina": "pp. 41–42, 52",
+"accion": "Revisar las Tablas 13 y 35 y definir una explicación única del cuadre de créditos."
+},
+{
+"id": "V06",
+"condicion": "CC3 Aspectos curriculares",
+"prioridad": "Media",
+"hallazgo": "Estudio Saber 11 – TyT con graduados de otras denominaciones",
+"detalle": "El estudio cubre 142 graduados de 2023-1 a 2025-2, mientras los primeros graduados de la denominación vigente son de 2025 y 2026-1.",
+"pagina": "pp. 30, 66",
+"accion": "Preparar respuesta sobre la validez de esta evidencia para el programa actual (continuidad curricular entre denominaciones)."
+},
+{
+"id": "V07",
+"condicion": "CC1 Denominación",
+"prioridad": "Media",
+"hallazgo": "Código «campo amplio 0421» frente a Tablas 2 y 4",
+"detalle": "El texto habla de «campo amplio 0421: Derecho», pero las tablas consignan campo amplio Administración de Empresas y Derecho y campo específico y detallado Derecho. En la CINE-F, 0421 es el campo detallado.",
+"pagina": "pp. 13, 12",
+"accion": "Unificar la explicación: amplio 04, específico 042 y detallado 0421."
+},
+{
+"id": "V08",
+"condicion": "CC4 Actividades académicas",
+"prioridad": "Media",
+"hallazgo": "Referencia a «séptimo semestre» en un programa de seis",
+"detalle": "Al describir inasistencias se menciona el 7.º semestre como el de menor incidencia, aunque el programa tecnológico tiene seis semestres.",
+"pagina": "p. 81",
+"accion": "Precisar el universo de datos de las Gráficas 11 a 13 (si incluyen el programa profesional)."
+},
+{
+"id": "V09",
+"condicion": "CC6 Sector externo",
+"prioridad": "Media",
+"hallazgo": "Convenios de práctica en proceso de formalización",
+"detalle": "INJUC, FUDECCI e IRS VIAL se describen como convenios en proceso de formalización, y IRS Seguridad Vial figura entre las organizaciones recurrentes de práctica.",
+"pagina": "pp. 53, 119",
+"accion": "Tener actualizado el estado de cada convenio (Anexo 6.1)."
+},
+{
+"id": "V10",
+"condicion": "CC6 Sector externo",
+"prioridad": "Media",
+"hallazgo": "Convenio marco FIPCAM – FESAM con vigencia ya vencida",
+"detalle": "La vigencia declarada va del 15-ene al 31-ago-2026; a la fecha de este tablero (15-oct-2026) ya terminó.",
+"pagina": "p. 104",
+"accion": "Confirmar prórroga o informe de cierre y qué resultados académicos quedaron."
+},
+{
+"id": "V11",
+"condicion": "CC8 Medios educativos",
+"prioridad": "Media",
+"hallazgo": "Laboratorios especializados: dos frente a cuatro",
+"detalle": "Una sección menciona dos laboratorios especializados (más cuarto de fotografía, sala de audiencias y consultorio) y otra, cuatro laboratorios especializados con internet.",
+"pagina": "pp. 133, 145",
+"accion": "Unificar el inventario de escenarios (Anexo 8.1)."
+},
+{
+"id": "V12",
+"condicion": "CC2 Justificación",
+"prioridad": "Baja",
+"hallazgo": "Cupo de 110 estudiantes frente a la matrícula histórica de primer curso",
+"detalle": "El cupo solicitado supera el máximo histórico de matriculados de primer curso que muestra la Gráfica 1.",
+"pagina": "pp. 12, 26",
+"accion": "Preparar el argumento de capacidad instalada (aulas, laboratorios, profesores) para sustentar el cupo."
+},
+{
+"id": "V13",
+"condicion": "CC3 Aspectos curriculares",
+"prioridad": "Baja",
+"hallazgo": "Numeración interna y referencias cruzadas",
+"detalle": "La tabla de contenido ubica los resultados de aprendizaje en 3.2.8, el texto en 3.2.9; se remite a un «numeral 3.5.1» inexistente en la tabla de contenido y la matriz se cita como Anexo 3.2 y como Anexo 3.1.",
+"pagina": "pp. 57, 60, 65",
+"accion": "Conocer la ruta correcta de cada referencia para no perderse en la sustentación."
+},
+{
+"id": "V14",
+"condicion": "CC4 Actividades académicas",
+"prioridad": "Baja",
+"hallazgo": "Lista de requisitos de grado inicia en el literal «b.»",
+"detalle": "La lista de requisitos adicionales para aspirar al título comienza en el literal b.",
+"pagina": "p. 84",
+"accion": "Tener presente el artículo del Reglamento Estudiantil que fija los requisitos completos."
+}
+]

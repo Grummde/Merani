@@ -1,0 +1,112 @@
+[
+{
+"condicion": "Contexto",
+"anexo": "Anexo 0.1",
+"descripcion": "Documento de aprobación de condiciones institucionales"
+},
+{
+"condicion": "Contexto",
+"anexo": "Anexo 0.2",
+"descripcion": "Resolución de aprobación de renovación del registro calificado del programa (el texto lo cita como Resolución 025569 de 2024)"
+},
+{
+"condicion": "Contexto",
+"anexo": "Anexo 0.3",
+"descripcion": "Informe de autoevaluación (el texto lo cita como Resolución 018446 de 2024)"
+},
+{
+"condicion": "CC2 Justificación",
+"anexo": "Anexo 2.1",
+"descripcion": "Estudio de viabilidad para la continuidad del programa"
+},
+{
+"condicion": "CC2 Justificación",
+"anexo": "Anexo 2.2",
+"descripcion": "Cuadro maestro de información histórica del programa"
+},
+{
+"condicion": "CC3 Aspectos curriculares",
+"anexo": "Anexo 3.1",
+"descripcion": "Tabla de resultados de aprendizaje y competencias (.xlsx)"
+},
+{
+"condicion": "CC3 Aspectos curriculares",
+"anexo": "Anexo 3.2",
+"descripcion": "Consolidado de syllabus del programa"
+},
+{
+"condicion": "CC3 Aspectos curriculares",
+"anexo": "Anexo 3.3",
+"descripcion": "Tabulación de pérdida académica 2026-1"
+},
+{
+"condicion": "CC3 Aspectos curriculares",
+"anexo": "Anexo 3.4",
+"descripcion": "Estudio comparativo Saber 11 – Saber TyT"
+},
+{
+"condicion": "CC4 Actividades académicas",
+"anexo": "Anexo 4.1",
+"descripcion": "Proyecto Educativo del Programa (PEP)"
+},
+{
+"condicion": "CC4 Actividades académicas",
+"anexo": "Anexo 4.2",
+"descripcion": "Consolidado de becas otorgadas entre 2020 y 2026"
+},
+{
+"condicion": "CC5 Investigación",
+"anexo": "Anexo 5.1",
+"descripcion": "TIMIS desarrollados en 2026"
+},
+{
+"condicion": "CC5 Investigación",
+"anexo": "Anexo 5.2",
+"descripcion": "Plan proyectado para la investigación"
+},
+{
+"condicion": "CC6 Sector externo",
+"anexo": "Anexo 6.1",
+"descripcion": "Matriz consolidada de convenios"
+},
+{
+"condicion": "CC6 Sector externo",
+"anexo": "Anexo 6.2",
+"descripcion": "Plan de relacionamiento con el sector externo"
+},
+{
+"condicion": "CC7 Profesores",
+"anexo": "Anexo 7.1",
+"descripcion": "Consolidado de información de docentes por semestre"
+},
+{
+"condicion": "CC7 Profesores",
+"anexo": "Anexo 7.2",
+"descripcion": "Programa de formación y cualificación docente"
+},
+{
+"condicion": "CC7 Profesores",
+"anexo": "Anexo 7.3",
+"descripcion": "Hojas de vida de los profesores con soportes"
+},
+{
+"condicion": "CC8 Medios educativos",
+"anexo": "Anexo 8.1",
+"descripcion": "Inventario de medios educativos generales"
+},
+{
+"condicion": "CC8 Medios educativos",
+"anexo": "Anexo 8.2",
+"descripcion": "Informe del plan de mantenimiento, renovación y actualización de medios educativos ejecutado"
+},
+{
+"condicion": "CC9 Infraestructura",
+"anexo": "Anexo 9.1",
+"descripcion": "Acuerdo de Asamblea General No. 062 del 13 de marzo de 2026"
+},
+{
+"condicion": "CC9 Infraestructura",
+"anexo": "Anexo 9.2",
+"descripcion": "Proyección financiera"
+}
+]

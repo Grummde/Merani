@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Renovación del registro calificado · Tecnología en Gestión Criminalística y Análisis Forense</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+:root{color-scheme:light dark;--color-fg:#1f1f1e;--color-fg-muted:#6b6a66;--color-bg:#faf9f5;--color-panel:#ffffff;--color-border-line:#dedcd3;--color-bad:#b3261e;--color-warn:#9a5b00;
+--cds-font-size-caption:.8125rem;--cds-font-size-body:.9375rem;--cds-font-size-heading:1rem;--cds-font-size-title:1.75rem;--cds-font-weight-medium:500;--cds-gap-sm:.5rem;--cds-gap-md:1rem;--cds-pad-xs:.35rem;--cds-pad-sm:.6rem;--cds-pad-md:.9rem;--cds-pad-lg:1.1rem;--cds-radius:10px;
+--cds-chart-grid:#e6e4dc;--cds-chart-muted:#b4b2a7;--cds-chart-status-critical:#c0392b;--cds-surface-popover:#ffffff;--cds-border:#cfcdc3;--cds-shadow-popover:0 4px 14px rgba(0,0,0,.12);--cds-text-secondary:#6b6a66;--cds-dur-slow:.3s;--cds-ease-out:ease-out;
+--font-anthropic-sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--font-anthropic-serif:Georgia,"Times New Roman",serif}
+@media (prefers-color-scheme:dark){:root{--color-fg:#ecebe6;--color-fg-muted:#a3a198;--color-bg:#1c1c1a;--color-panel:#262624;--color-border-line:#3a3a36;--color-bad:#ff8a80;--color-warn:#e6b450;--cds-chart-grid:#33332f;--cds-chart-muted:#6b6a66;--cds-chart-status-critical:#e5736a;--cds-surface-popover:#2d2d2a;--cds-border:#44443f;--cds-text-secondary:#a3a198;--cds-shadow-popover:0 4px 14px rgba(0,0,0,.5)}}
+html,body{margin:0;background:var(--color-bg)}
+body{padding:clamp(1rem,3vw,2.5rem)}
+.dash-skeleton{background:var(--cds-chart-grid);border-radius:8px;opacity:.5}
+.rc-fail{padding:1rem}
+</style>
+<style>
+.rc{position:relative;max-width:1180px;margin-inline:auto;font-family:var(--font-anthropic-sans);color:var(--color-fg);font-size:var(--cds-font-size-body)}
+.rc *{box-sizing:border-box}
+.rc h1{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);line-height:1.2;margin:0 0 .35rem}
+.rc h2{font-size:var(--cds-font-size-heading);font-weight:var(--cds-font-weight-medium);margin:0 0 .5rem}
+.rc h3{font-size:var(--cds-font-size-heading);font-weight:var(--cds-font-weight-medium);margin:0 0 .15rem}
+.rc p{margin:0}
+.rc-take{color:var(--color-fg-muted);max-width:60rem}
+.rc-tabs{display:flex;flex-wrap:wrap;gap:var(--cds-gap-sm);margin:1rem 0 1.1rem;border-bottom:1px solid var(--color-border-line);padding-bottom:.6rem}
+.rc-tab,.rc-chip{font:inherit;font-size:var(--cds-font-size-caption);color:var(--color-fg);background:transparent;border:1px solid var(--color-border-line);border-radius:999px;padding:.35rem .8rem;cursor:pointer}
+.rc-tab[aria-selected=true],.rc-chip[aria-pressed=true]{background:var(--color-fg);color:var(--color-bg);border-color:var(--color-fg)}
+.rc-pane[hidden]{display:none}
+.rc-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,10.5rem),1fr));gap:var(--cds-gap-md);margin-bottom:1.1rem}
+.rc-kpi{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg);display:flex;flex-direction:column;gap:.2rem}
+.rc-kpi-l{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.rc-kpi-v{font-family:var(--font-anthropic-serif);font-weight:400;font-size:2rem;line-height:1.1;font-variant-numeric:tabular-nums}
+.rc-kpi-n{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.rc-card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg);min-width:0}
+.rc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,24rem),1fr));gap:var(--cds-gap-md);margin-bottom:var(--cds-gap-md)}
+.rc-note{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin-bottom:.6rem}
+.rc-chart{min-height:120px}
+.rc-legend{display:flex;flex-wrap:wrap;gap:.2rem .9rem;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin-bottom:.35rem}
+.rc-legend i,.rc-tip i{display:inline-block;width:.6rem;height:.6rem;border-radius:2px;margin-right:.35rem;vertical-align:baseline}
+.rc-tick{font-size:11px;fill:var(--color-fg-muted)}
+.rc-hrow{display:grid;grid-template-columns:minmax(7rem,38%) 1fr 3.4rem;gap:.5rem;align-items:center;margin:.35rem 0;font-size:var(--cds-font-size-caption)}
+.rc-hrow .rc-track{background:var(--cds-chart-grid);border-radius:4px;height:.7rem;overflow:hidden;display:flex}
+.rc-hrow .rc-fill{height:100%}
+.rc-hrow .rc-val{text-align:right;font-variant-numeric:tabular-nums;color:var(--color-fg-muted)}
+.rc-tip{position:absolute;z-index:5;pointer-events:none;background:var(--cds-surface-popover);border:1px solid var(--cds-border);border-radius:var(--cds-radius);box-shadow:var(--cds-shadow-popover);padding:var(--cds-pad-xs) var(--cds-pad-sm);font-size:var(--cds-font-size-caption);max-width:16rem}
+.rc-tip-h{color:var(--cds-text-secondary);margin-bottom:.15rem}
+.rc-fail{display:flex;align-items:center;justify-content:center;gap:.4rem;min-height:120px;color:var(--color-fg-muted);font-size:var(--cds-font-size-caption)}
+.rc-fail i{width:.375rem;height:.375rem;border-radius:50%;background:var(--color-bad)}
+.rc-bar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-bottom:.8rem}
+.rc-search{font:inherit;font-size:var(--cds-font-size-caption);padding:.35rem .7rem;border:1px solid var(--color-border-line);border-radius:999px;background:var(--color-bg);color:var(--color-fg);min-width:14rem}
+.rc-check{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);display:inline-flex;gap:.35rem;align-items:center}
+.rc-scroll{overflow-x:auto;background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius)}
+.rc-table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size-caption);font-variant-numeric:tabular-nums}
+.rc-table th{text-align:left;font-weight:var(--cds-font-weight-medium);color:var(--color-fg-muted);padding:.6rem .8rem;border-bottom:1px solid var(--color-border-line);position:sticky;top:0;background:var(--color-panel)}
+.rc-table td{padding:.6rem .8rem;border-bottom:1px solid var(--color-border-line);vertical-align:top;line-height:1.45}
+.rc-table tr:last-child td{border-bottom:0}
+.rc-table td.rc-w{min-width:16rem}
+.rc-table td.rc-nw{white-space:nowrap}
+.rc-p-alta{color:var(--color-bad);font-weight:var(--cds-font-weight-medium)}
+.rc-p-media{color:var(--color-warn);font-weight:var(--cds-font-weight-medium)}
+.rc-p-baja{color:var(--color-fg-muted)}
+.rc-study .rc-table td.rc-ans{filter:blur(6px);cursor:pointer;user-select:none}
+.rc-study .rc-table tr.open td.rc-ans{filter:none;user-select:auto}
+.rc-study .rc-table tbody tr{cursor:pointer}
+.rc-cond{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,13rem),1fr));gap:var(--cds-gap-sm);margin-bottom:1.1rem}
+.rc-cond button{font:inherit;font-size:var(--cds-font-size-caption);text-align:left;background:var(--color-panel);color:var(--color-fg);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:.7rem .85rem;cursor:pointer}
+.rc-cond button:hover{border-color:var(--color-fg)}
+.rc-how{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin:.25rem 0 1.1rem;display:grid;gap:.25rem}
+@media (prefers-reduced-motion:no-preference){.rc-pane{animation:rcin var(--cds-dur-slow) var(--cds-ease-out)}@keyframes rcin{from{opacity:.4}to{opacity:1}}}
+</style>
+</head><body>
+<div id="rc" class="rc">
+  <header>
+    <h1>Renovación del registro calificado · Tecnología en Gestión Criminalística y Análisis Forense</h1>
+    <p class="rc-take">Herramienta de estudio para la sustentación o la visita de pares: resume la solicitud radicada, ordena las cifras por condición de calidad, anticipa preguntas probables y señala los puntos del documento que conviene verificar.</p>
+  </header>
+  <nav class="rc-tabs" aria-label="Secciones">
+    <button class="rc-tab" data-pane="panorama" aria-selected="true">Panorama</button>
+    <button class="rc-tab" data-pane="cifras" aria-selected="false">Cifras</button>
+    <button class="rc-tab" data-pane="condiciones" aria-selected="false">Hechos por condición</button>
+    <button class="rc-tab" data-pane="preguntas" aria-selected="false">Preguntas de pares</button>
+    <button class="rc-tab" data-pane="verificar" aria-selected="false">Por verificar</button>
+    <button class="rc-tab" data-pane="anexos" aria-selected="false">Anexos</button>
+  </nav>
+
+  <section class="rc-pane" id="panorama">
+    <div class="rc-kpis">
+      <div class="rc-kpi"><span class="rc-kpi-l">Matriculados en 2026-1</span><b class="rc-kpi-v" data-source="cifras" data-field="valor" data-where="serie=matricula_total&amp;categoria=2026-1">—</b><span class="rc-kpi-n">Gráfica 2, p. 27</span></div>
+      <div class="rc-kpi"><span class="rc-kpi-l">Graduados 2020 a 2026-1</span><b class="rc-kpi-v" data-source="totales" data-field="valor" data-where="medida=graduados">—</b><span class="rc-kpi-n">Gráfica 4, p. 30 (todas las denominaciones)</span></div>
+      <div class="rc-kpi"><span class="rc-kpi-l">Profesores en 2025-2</span><b class="rc-kpi-v" data-source="cifras" data-field="valor" data-where="serie=docentes_total&amp;categoria=2025-2">—</b><span class="rc-kpi-n">Gráfica 17, p. 122</span></div>
+      <div class="rc-kpi"><span class="rc-kpi-l">TIMI realizados 2023-1 a 2026-1</span><b class="rc-kpi-v" data-source="totales" data-field="valor" data-where="medida=timis">—</b><span class="rc-kpi-n">Tabla 38, p. 92</span></div>
+      <div class="rc-kpi"><span class="rc-kpi-l">Graduados que mejoran en inglés (Saber 11 a TyT)</span><b class="rc-kpi-v" data-source="cifras" data-field="valor" data-where="serie=saber_pct&amp;categoria=Inglés&amp;subcategoria=Mejora de nivel" data-suffix=" %">—</b><span class="rc-kpi-n">Tabla 34, p. 66</span></div>
+    </div>
+    <div class="rc-how">
+      <span><b>Cómo usarlo:</b> recorra las nueve condiciones, practique las preguntas en modo estudio (la respuesta se muestra al hacer clic) y revise la pestaña «Por verificar» antes de la visita.</span>
+      <span>Cada dato indica la página del documento radicado; las cifras de gráficas se leyeron del PDF y deben contrastarse con los anexos cuando se citen en la sustentación.</span>
+    </div>
+    <h2>Ir a una condición</h2>
+    <div class="rc-cond" id="rc-conds" data-source="fichas"></div>
+    <h2>Ficha del programa y contexto</h2>
+    <div class="rc-scroll"><table class="rc-table" id="tbl-contexto" data-source="fichas" data-row-key="id"><thead><tr><th data-field="tema">Tema</th><th data-field="dato">Dato</th><th data-field="pagina">Página</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="rc-pane" id="cifras" hidden>
+    <div class="rc-grid">
+      <article class="rc-card"><h3>Matrícula total por periodo</h3><p class="rc-note">Estudiantes matriculados por semestre · Gráfica 2, p. 27 (CC2)</p><div class="rc-chart dash-skeleton" id="ch-mat" data-source="cifras"></div></article>
+      <article class="rc-card"><h3>Primer curso: inscritos, admitidos y matriculados</h3><p class="rc-note">Demanda y conversión por periodo · Gráfica 1, p. 26 (CC2)</p><div class="rc-chart dash-skeleton" id="ch-pc" data-source="cifras"></div></article>
+      <article class="rc-card"><h3>Graduados por año y denominación</h3><p class="rc-note">2026 incluye solo 2026-1 · Gráfica 4, p. 30 (CC2)</p><div class="rc-chart dash-skeleton" id="ch-grad" data-source="cifras"></div></article>
+      <article class="rc-card"><h3>Vacantes afines observadas, 2024–2026</h3><p class="rc-note">Por fuente de empleo · Gráfica 3, p. 28 (CC2)</p><div class="rc-chart dash-skeleton" id="ch-vac" data-source="cifras"></div></article>
+      <article class="rc-card"><h3>Graduados: categoría ocupacional (OLE)</h3><p class="rc-note">Porcentaje de graduados encuestados · Gráfica 6, p. 31</p><div class="rc-chart dash-skeleton" id="ch-ole-cat" data-source="cifras"></div></article>
+      <article class="rc-card"><h3>Graduados: sector de empleo (OLE)</h3><p class="rc-note">Porcentaje de graduados vinculados · Gráfica 8, p. 32</p><div class="rc-chart dash-skeleton" id="ch-ole-sec" data-source="cifras"></div></article>
+      <article class="rc-card"><h3>Graduados: tipo de contrato (OLE)</h3><p class="rc-note">Porcentaje de graduados vinculados · Gráfica 7, p. 32</p><div class="rc-chart dash-skeleton" id="ch-ole-con" data-source="cifras"></div></article>
+      <article class="rc-card"><h3>Graduados: tipo de cargo (OLE)</h3><p class="rc-note">Porcentaje de graduados vinculados · Gráfica 9, p. 33</p><div class="rc-chart dash-skeleton" id="ch-ole-car" data-source="cifras"></div></article>
+      <article class="rc-card"><h3>Saber 11 a Saber TyT: cambio de nivel</h3><p class="rc-note">142 graduados (2023-1 a 2025-2) · Tabla 34, p. 66 (CC3)</p><div class="rc-chart dash-skeleton" id="ch-saber" data-source="cifras"></div></article>
+      <article class="rc-card"><h3>Profesores por dedicación</h3><p class="rc-note">Barras: Gráfica 18; rombo: total de la Gráfica 17, p. 122 (CC7)</p><div class="rc-chart dash-skeleton" id="ch-doc" data-source="cifras"></div></article>
+      <article class="rc-card"><h3>Trabajos integradores (TIMI) por periodo</h3><p class="rc-note">Investigación formativa · Tabla 38, p. 92 (CC5)</p><div class="rc-chart dash-skeleton" id="ch-timi" data-source="cifras"></div></article>
+    </div>
+  </section>
+
+  <section class="rc-pane" id="condiciones" hidden>
+    <div class="rc-bar" id="chips-cond" data-source="fichas"></div>
+    <div class="rc-scroll"><table class="rc-table" id="tbl-fichas" data-source="fichas" data-row-key="id"><thead><tr><th data-field="condicion">Condición</th><th data-field="tema">Tema</th><th data-field="dato">Dato del documento</th><th data-field="pagina">Página</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="rc-pane" id="preguntas" hidden>
+    <div class="rc-bar" id="chips-preg" data-source="fichas"></div>
+    <div class="rc-bar">
+      <input class="rc-search" id="rc-q" type="search" placeholder="Buscar en preguntas y respuestas" aria-label="Buscar en preguntas y respuestas">
+      <label class="rc-check"><input type="checkbox" id="rc-study" checked> Modo estudio: mostrar la respuesta al hacer clic en la fila</label>
+    </div>
+    <div class="rc-scroll rc-studybox"><table class="rc-table" id="tbl-preg" data-source="preguntas" data-row-key="id"><thead><tr><th data-field="condicion">Condición</th><th data-field="pregunta">Pregunta probable</th><th data-field="respuesta">Respuesta según el documento</th><th data-field="pagina">Página</th><th data-field="soporte">Soporte</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="rc-pane" id="verificar" hidden>
+    <p class="rc-note">Hallazgos de lectura del documento radicado que un par podría advertir. No son errores confirmados: conviene contrastarlos con los anexos y con Q10 antes de la visita.</p>
+    <div class="rc-bar" id="chips-ver" data-source="fichas"></div>
+    <div class="rc-scroll"><table class="rc-table" id="tbl-ver" data-source="verificar" data-row-key="id"><thead><tr><th data-field="prioridad">Prioridad</th><th data-field="condicion">Condición</th><th data-field="hallazgo">Hallazgo</th><th data-field="detalle">Detalle</th><th data-field="pagina">Página</th><th data-field="accion">Acción sugerida</th></tr></thead><tbody></tbody></table></div>
+    <h2 style="margin-top:1.3rem">Cuadre de profesores por periodo</h2>
+    <p class="rc-note">Compara el total de la Gráfica 17 con la suma de tiempo completo, medio tiempo y tiempo parcial de la Gráfica 18 (p. 122).</p>
+    <div class="rc-scroll"><table class="rc-table" id="tbl-cuadre" data-source="cuadre_docentes" data-row-key="periodo"><thead><tr><th data-field="periodo">Periodo</th><th data-field="total">Total (Gráfica 17)</th><th data-field="suma_dedicacion">Suma por dedicación (Gráfica 18)</th><th data-field="diferencia">Diferencia</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="rc-pane" id="anexos" hidden>
+    <div class="rc-scroll"><table class="rc-table" id="tbl-anx" data-source="anexos" data-row-key="anexo"><thead><tr><th data-field="condicion">Condición</th><th data-field="anexo">Anexo</th><th data-field="descripcion">Descripción</th></tr></thead><tbody></tbody></table></div>
+  </section>
+</div>
+
+
+<script>
+window.dash=(function(){
+  const store={},calcs=[],cbs=[];let state='loading';
+  const names=["cifras", "fichas", "preguntas", "verificar", "anexos"];
+  const api={
+    colors:['#c96442','#3b7ea1','#6a994e','#b08900','#8e5ea2','#2a9d8f','#d1495b','#7a7a72'],
+    data:(id)=>({status:state==='error'?'error':(id in store?'ok':'loading'),data:store[id]||[]}),
+    calc:(id,o)=>{calcs.push([id,o]);},
+    onData:(f)=>{cbs.push(f);f();},
+    setLink:(n)=>{try{history.replaceState(null,'','#'+n);}catch(e){}}
+  };
+  function done(){
+    calcs.forEach(([id,o])=>{store[id]=o.fn(...o.inputs.map((i)=>store[i]));});
+    state='ok';cbs.forEach((f)=>f());
+  }
+  const emb=window.__DATOS;
+  if(emb){names.forEach((n)=>{store[n]=emb[n];});done();}
+  else{
+    Promise.all(names.map((n)=>fetch('datos/'+n+'.json').then((r)=>{if(!r.ok)throw new Error(n);return r.json();}).then((d)=>{store[n]=d;})))
+      .then(()=>setTimeout(done,0)).catch(()=>{state='error';cbs.forEach((f)=>f());
+        const m=document.createElement('p');m.style.cssText='padding:1rem;color:#b3261e';
+        m.textContent='No se pudieron cargar los datos. Si abrió el archivo con doble clic, use tablero_offline.html o publique la carpeta en GitHub Pages.';
+        document.body.prepend(m);});
+  }
+  let t;window.addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(()=>cbs.forEach((f)=>f()),150);});
+  return api;
+})();
+</script>
+<script>
+(function () {
+  const root = document.getElementById('rc');
+  const $ = (s, r = root) => r.querySelector(s);
+  const $$ = (s, r = root) => [...r.querySelectorAll(s)];
+  const nf = new Intl.NumberFormat('es-CO', { maximumFractionDigits: 2 });
+  const num = (v) => Number(v);
+
+  dash.calc('totales', {
+    inputs: ['cifras'],
+    title: 'Totales acumulados',
+    description: 'Suma de graduados (2020 a 2026-1) y de TIMI (2023-1 a 2026-1) de las cifras del documento.',
+    fn: (cifras) => [
+      { medida: 'graduados', valor: cifras.filter((r) => r.serie === 'graduados').reduce((a, r) => a + Number(r.valor), 0) },
+      { medida: 'timis', valor: cifras.filter((r) => r.serie === 'timis').reduce((a, r) => a + Number(r.valor), 0) }
+    ]
+  });
+  dash.calc('cuadre_docentes', {
+    inputs: ['cifras'],
+    title: 'Cuadre de profesores',
+    description: 'Total de profesores por periodo frente a la suma por dedicación.',
+    fn: (cifras) => cifras.filter((r) => r.serie === 'docentes_total').map((t) => {
+      const s = cifras.filter((r) => r.serie === 'docentes_dedicacion' && r.categoria === t.categoria).reduce((a, r) => a + Number(r.valor), 0);
+      return { periodo: t.categoria, total: Number(t.valor), suma_dedicacion: s, diferencia: Number(t.valor) - s };
+    })
+  });
+
+  const PANES = ['panorama', 'cifras', 'condiciones', 'preguntas', 'verificar', 'anexos'];
+  let current = 'panorama';
+  const state = { condiciones: 'Todas', preguntas: 'Todas', verificar: 'Todas', q: '' };
+
+  const tip = document.createElement('div');
+  tip.className = 'rc-tip'; tip.hidden = true; root.append(tip);
+  function showTip(ev, head, lines) {
+    tip.replaceChildren();
+    const h = document.createElement('div'); h.className = 'rc-tip-h'; h.textContent = head; tip.append(h);
+    lines.forEach((l) => {
+      const d = document.createElement('div');
+      if (l.color) { const s = document.createElement('i'); s.style.background = l.color; d.append(s); }
+      d.append(document.createTextNode(l.text)); tip.append(d);
+    });
+    tip.hidden = false;
+    const r = root.getBoundingClientRect();
+    let x = ev.clientX - r.left + 12; const y = ev.clientY - r.top + 12;
+    if (x + tip.offsetWidth > r.width) x = Math.max(0, r.width - tip.offsetWidth - 4);
+    tip.style.left = x + 'px'; tip.style.top = y + 'px';
+  }
+  const hideTip = () => { tip.hidden = true; };
+
+  function fail(el) {
+    el.classList.remove('dash-skeleton');
+    el.replaceChildren();
+    const d = document.createElement('div'); d.className = 'rc-fail';
+    d.append(document.createElement('i'), document.createTextNode('No se pudo cargar'));
+    el.append(d);
+  }
+  function legend(el, items) {
+    const d = document.createElement('div'); d.className = 'rc-legend';
+    items.forEach((it) => { const s = document.createElement('span'); const i = document.createElement('i'); i.style.background = it.color; s.append(i, document.createTextNode(it.text)); d.append(s); });
+    el.append(d);
+  }
+  function mountSvg(el, h) {
+    const w = Math.max(260, el.clientWidth || 560);
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', '0 0 ' + w + ' ' + h);
+    return { svg, w };
+  }
+  function yGrid(svg, y, m, w) {
+    svg.append('g').selectAll('line').data(y.ticks(4)).join('line')
+      .attr('x1', m.l).attr('x2', w - m.r).attr('y1', (d) => y(d)).attr('y2', (d) => y(d)).style('stroke', 'var(--cds-chart-grid)');
+    svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('class', 'rc-tick')
+      .attr('x', m.l - 6).attr('y', (d) => y(d) + 3).attr('text-anchor', 'end').text((d) => nf.format(d));
+  }
+  function xLabels(svg, x, cats, h, m, w) {
+    const k = Math.max(1, Math.ceil(cats.length * 44 / (w - m.l - m.r)));
+    svg.append('g').selectAll('text').data(cats.filter((_, i) => i % k === 0)).join('text').attr('class', 'rc-tick')
+      .attr('x', (d) => x(d) + x.bandwidth() / 2).attr('y', h - 8).attr('text-anchor', 'middle').text((d) => d);
+  }
+
+  function drawBars(el, data, unit) {
+    const h = 230, m = { t: 18, r: 8, b: 28, l: 36 };
+    el.replaceChildren(); el.style.minHeight = h + 'px';
+    const { svg, w } = mountSvg(el, h);
+    const x = d3.scaleBand(data.map((d) => d.x), [m.l, w - m.r]).padding(0.25);
+    const y = d3.scaleLinear([0, (d3.max(data, (d) => d.y) || 1) * 1.1], [h - m.b, m.t]).nice();
+    yGrid(svg, y, m, w);
+    svg.append('g').selectAll('rect').data(data).join('rect')
+      .attr('x', (d) => x(d.x)).attr('y', (d) => y(d.y)).attr('width', x.bandwidth()).attr('height', (d) => Math.max(0, y(0) - y(d.y)))
+      .attr('rx', 4).style('fill', dash.colors[0])
+      .on('mousemove', (ev, d) => showTip(ev, d.x, [{ text: nf.format(d.y) + ' ' + unit }])).on('mouseleave', hideTip);
+    if (x.bandwidth() >= 22) {
+      svg.append('g').selectAll('text').data(data).join('text').attr('class', 'rc-tick')
+        .attr('x', (d) => x(d.x) + x.bandwidth() / 2).attr('y', (d) => y(d.y) - 5).attr('text-anchor', 'middle').text((d) => nf.format(d.y));
+    }
+    xLabels(svg, x, data.map((d) => d.x), h, m, w);
+  }
+
+  function drawLines(el, cats, series) {
+    const h = 230, m = { t: 12, r: 12, b: 28, l: 36 };
+    el.replaceChildren(); el.style.minHeight = (h + 24) + 'px';
+    legend(el, series.map((s, i) => ({ color: dash.colors[i], text: s.name })));
+    const { svg, w } = mountSvg(el, h);
+    const x = d3.scalePoint(cats, [m.l + 8, w - m.r - 8]).padding(0.2);
+    const y = d3.scaleLinear([0, (d3.max(series, (s) => d3.max(s.values)) || 1) * 1.08], [h - m.b, m.t]).nice();
+    yGrid(svg, y, m, w);
+    const k = Math.max(1, Math.ceil(cats.length * 44 / (w - m.l - m.r)));
+    svg.append('g').selectAll('text').data(cats.filter((_, i) => i % k === 0)).join('text').attr('class', 'rc-tick')
+      .attr('x', (d) => x(d)).attr('y', h - 8).attr('text-anchor', 'middle').text((d) => d);
+    series.forEach((s, i) => {
+      const line = d3.line().x((_, j) => x(cats[j])).y((v) => y(v));
+      svg.append('path').attr('d', line(s.values)).attr('fill', 'none').attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round').style('stroke', dash.colors[i]);
+      svg.append('g').selectAll('circle').data(s.values).join('circle').attr('cx', (_, j) => x(cats[j])).attr('cy', (v) => y(v)).attr('r', 2.5).style('fill', dash.colors[i]);
+    });
+    const step = cats.length > 1 ? x(cats[1]) - x(cats[0]) : w;
+    svg.append('g').selectAll('rect').data(cats).join('rect')
+      .attr('x', (c) => x(c) - step / 2).attr('y', m.t).attr('width', step).attr('height', h - m.b - m.t).attr('fill', 'transparent')
+      .on('mousemove', (ev, c) => { const j = cats.indexOf(c); showTip(ev, c, series.map((s, i) => ({ color: dash.colors[i], text: s.name + ': ' + nf.format(s.values[j]) }))); })
+      .on('mouseleave', hideTip);
+  }
+
+  function drawStack(el, cats, keys, val, extra) {
+    const h = 240, m = { t: 14, r: 8, b: 28, l: 36 };
+    el.replaceChildren(); el.style.minHeight = (h + 40) + 'px';
+    const items = keys.map((k, i) => ({ color: dash.colors[i], text: k.label }));
+    if (extra) items.push({ color: 'var(--color-fg)', text: extra.name });
+    legend(el, items);
+    const { svg, w } = mountSvg(el, h);
+    const rows = cats.map((c) => { const o = { cat: c }; keys.forEach((k) => { o[k.key] = val(c, k.key); }); return o; });
+    const layers = d3.stack().keys(keys.map((k) => k.key))(rows);
+    const tops = rows.map((r) => keys.reduce((a, k) => a + r[k.key], 0));
+    const extras = extra ? cats.map((c) => extra.fn(c)) : [];
+    const x = d3.scaleBand(cats, [m.l, w - m.r]).padding(0.25);
+    const y = d3.scaleLinear([0, (d3.max(tops.concat(extras.filter((v) => v != null))) || 1) * 1.1], [h - m.b, m.t]).nice();
+    yGrid(svg, y, m, w);
+    layers.forEach((L, i) => {
+      svg.append('g').selectAll('rect').data(L).join('rect')
+        .attr('x', (d) => x(d.data.cat)).attr('y', (d) => y(d[1])).attr('width', x.bandwidth()).attr('height', (d) => Math.max(0, y(d[0]) - y(d[1])))
+        .style('fill', dash.colors[i]);
+    });
+    if (extra) {
+      svg.append('g').selectAll('path').data(cats).join('path')
+        .attr('transform', (c, j) => 'translate(' + (x(c) + x.bandwidth() / 2) + ',' + (extras[j] == null ? -20 : y(extras[j])) + ')')
+        .attr('d', d3.symbol(d3.symbolDiamond, 55)()).style('fill', 'var(--color-fg)');
+    }
+    xLabels(svg, x, cats, h, m, w);
+    svg.append('g').selectAll('rect').data(cats).join('rect')
+      .attr('x', (c) => x(c) - (x.step() - x.bandwidth()) / 2).attr('y', m.t).attr('width', x.step()).attr('height', h - m.b - m.t).attr('fill', 'transparent')
+      .on('mousemove', (ev, c) => {
+        const j = cats.indexOf(c);
+        const lines = keys.map((k, i) => ({ color: dash.colors[i], text: k.label + ': ' + nf.format(rows[j][k.key]) }));
+        if (extra && extras[j] != null) lines.push({ text: extra.name + ': ' + nf.format(extras[j]) });
+        showTip(ev, c, lines);
+      }).on('mouseleave', hideTip);
+  }
+
+  function drawHBars(el, data, unit) {
+    el.replaceChildren(); el.style.minHeight = '120px';
+    const max = d3.max(data, (d) => d.value) || 1;
+    data.forEach((d) => {
+      const row = document.createElement('div'); row.className = 'rc-hrow';
+      const l = document.createElement('span'); l.textContent = d.label;
+      const t = document.createElement('span'); t.className = 'rc-track';
+      const f = document.createElement('span'); f.className = 'rc-fill'; f.style.width = (d.value / max * 100) + '%'; f.style.background = dash.colors[0];
+      t.append(f);
+      const v = document.createElement('span'); v.className = 'rc-val'; v.textContent = nf.format(d.value) + unit;
+      row.append(l, t, v); el.append(row);
+    });
+  }
+
+  function drawSaber(el, comps, parts) {
+    el.replaceChildren(); el.style.minHeight = '120px';
+    const colors = [dash.colors[1], 'var(--cds-chart-muted)', 'var(--cds-chart-status-critical)'];
+    legend(el, parts.map((p, i) => ({ color: colors[i], text: p })));
+    comps.forEach((c) => {
+      const row = document.createElement('div'); row.className = 'rc-hrow'; row.style.gridTemplateColumns = 'minmax(7rem,28%) 1fr';
+      const l = document.createElement('span'); l.textContent = c.label;
+      const t = document.createElement('span'); t.className = 'rc-track'; t.style.height = '1.4rem';
+      c.values.forEach((v, i) => {
+        const f = document.createElement('span'); f.className = 'rc-fill'; f.style.width = v + '%'; f.style.background = colors[i];
+        f.style.color = 'var(--color-bg)'; f.style.fontSize = '11px'; f.style.display = 'flex'; f.style.alignItems = 'center'; f.style.justifyContent = 'center';
+        f.textContent = v >= 9 ? nf.format(v) + ' %' : '';
+        f.addEventListener('mousemove', (ev) => showTip(ev, c.label, [{ color: colors[i], text: parts[i] + ': ' + nf.format(v) + ' %' }]));
+        f.addEventListener('mouseleave', hideTip);
+        t.append(f);
+      });
+      row.append(l, t); el.append(row);
+    });
+  }
+
+  function renderCharts() {
+    const g = dash.data('cifras');
+    const els = $$('#cifras .rc-chart');
+    if (g.status !== 'ok') {
+      els.forEach((el) => { if (g.status === 'loading') { el.classList.add('dash-skeleton'); } else { fail(el); } });
+      return;
+    }
+    els.forEach((el) => el.classList.remove('dash-skeleton'));
+    const rows = g.data;
+    const S = (s) => rows.filter((r) => r.serie === s);
+    const mat = S('matricula_total');
+    drawBars($('#ch-mat'), mat.map((r) => ({ x: r.categoria, y: num(r.valor) })), 'estudiantes');
+    const pc = S('primer_curso');
+    const cats = [...new Set(pc.map((r) => r.categoria))];
+    const subs = [...new Set(pc.map((r) => r.subcategoria))];
+    drawLines($('#ch-pc'), cats, subs.map((s) => ({ name: s, values: cats.map((c) => num((pc.find((r) => r.categoria === c && r.subcategoria === s) || {}).valor)) })));
+    const gr = S('graduados');
+    const years = [...new Set(gr.map((r) => r.categoria))].sort();
+    const gk = [...new Set(gr.map((r) => r.subcategoria))].map((k) => ({ key: k, label: k.replace('Tecnología en ', '') }));
+    drawStack($('#ch-grad'), years, gk, (c, k) => num((gr.find((r) => r.categoria === c && r.subcategoria === k) || { valor: 0 }).valor));
+    drawHBars($('#ch-vac'), S('vacantes').map((r) => ({ label: r.categoria, value: num(r.valor) })), '');
+    drawHBars($('#ch-ole-cat'), S('ole_categoria').map((r) => ({ label: r.categoria, value: num(r.valor) })), ' %');
+    drawHBars($('#ch-ole-sec'), S('ole_sector').map((r) => ({ label: r.categoria, value: num(r.valor) })), ' %');
+    drawHBars($('#ch-ole-con'), S('ole_contrato').map((r) => ({ label: r.categoria, value: num(r.valor) })), ' %');
+    drawHBars($('#ch-ole-car'), S('ole_cargo').map((r) => ({ label: r.categoria, value: num(r.valor) })), ' %');
+    const sp = S('saber_pct');
+    const comps = [...new Set(sp.map((r) => r.categoria))];
+    const parts = [...new Set(sp.map((r) => r.subcategoria))];
+    drawSaber($('#ch-saber'), comps.map((c) => ({ label: c, values: parts.map((p) => num((sp.find((r) => r.categoria === c && r.subcategoria === p) || {}).valor)) })), parts);
+    const dd = S('docentes_dedicacion');
+    const dt = S('docentes_total');
+    const pers = [...new Set(dd.map((r) => r.categoria))];
+    const dk = [...new Set(dd.map((r) => r.subcategoria))].map((k) => ({ key: k, label: k }));
+    drawStack($('#ch-doc'), pers, dk, (c, k) => num((dd.find((r) => r.categoria === c && r.subcategoria === k) || { valor: 0 }).valor),
+      { name: 'Total de profesores (Gráfica 17)', fn: (c) => { const r = dt.find((x) => x.categoria === c); return r ? num(r.valor) : null; } });
+    drawBars($('#ch-timi'), S('timis').map((r) => ({ x: r.categoria, y: num(r.valor) })), 'TIMI');
+  }
+
+  function renderKpis() {
+    $$('.rc-kpi-v').forEach((el) => {
+      const g = dash.data(el.dataset.source);
+      if (g.status !== 'ok') { el.textContent = '—'; return; }
+      const w = Object.fromEntries(new URLSearchParams(el.dataset.where));
+      const r = g.data.find((x) => Object.entries(w).every(([k, v]) => String(x[k]) === v));
+      el.textContent = r ? nf.format(num(r[el.dataset.field])) + (el.dataset.suffix || '') : '—';
+    });
+  }
+
+  function conds() {
+    const g = dash.data('fichas');
+    return g.status === 'ok' ? [...new Set(g.data.map((r) => r.condicion))] : [];
+  }
+  function renderChips(el, key) {
+    el.replaceChildren();
+    ['Todas'].concat(conds()).forEach((c) => {
+      const b = document.createElement('button'); b.className = 'rc-chip'; b.textContent = c; b.setAttribute('aria-pressed', String(state[key] === c));
+      b.addEventListener('click', () => { state[key] = c; render(); });
+      el.append(b);
+    });
+  }
+  function renderCondGrid() {
+    const el = $('#rc-conds'); el.replaceChildren();
+    conds().filter((c) => c !== 'Contexto').forEach((c) => {
+      const b = document.createElement('button'); b.textContent = c;
+      b.addEventListener('click', () => { state.condiciones = c; show('condiciones'); });
+      el.append(b);
+    });
+  }
+
+  function fillTable(tbl, id, cols, filterFn, opts) {
+    opts = opts || {};
+    const tb = tbl.tBodies[0]; tb.replaceChildren();
+    const g = dash.data(id);
+    if (g.status !== 'ok') return;
+    const key = tbl.dataset.rowKey;
+    let data = g.data.filter(filterFn || (() => true));
+    if (opts.sort) data = data.slice().sort(opts.sort);
+    data.forEach((r) => {
+      const tr = document.createElement('tr'); tr.dataset.key = String(r[key]);
+      cols.forEach((c, i) => {
+        const td = document.createElement('td'); td.textContent = r[c] == null ? '' : String(r[c]);
+        if (opts.wide && opts.wide.includes(c)) td.classList.add('rc-w');
+        if (opts.nowrap && opts.nowrap.includes(c)) td.classList.add('rc-nw');
+        if (opts.ans === c) td.classList.add('rc-ans');
+        if (c === 'prioridad') td.classList.add('rc-p-' + String(r[c]).toLowerCase());
+        tr.append(td);
+      });
+      if (opts.toggle) tr.addEventListener('click', () => tr.classList.toggle('open'));
+      tb.append(tr);
+    });
+  }
+
+  function render() {
+    renderKpis();
+    renderCondGrid();
+    fillTable($('#tbl-contexto'), 'fichas', ['tema', 'dato', 'pagina'], (r) => r.condicion === 'Contexto', { wide: ['dato'], nowrap: ['pagina'] });
+    if (current === 'cifras') renderCharts();
+    if (current === 'condiciones') {
+      renderChips($('#chips-cond'), 'condiciones');
+      fillTable($('#tbl-fichas'), 'fichas', ['condicion', 'tema', 'dato', 'pagina'], (r) => state.condiciones === 'Todas' || r.condicion === state.condiciones, { wide: ['dato'], nowrap: ['pagina', 'condicion'] });
+    }
+    if (current === 'preguntas') {
+      renderChips($('#chips-preg'), 'preguntas');
+      const q = state.q.trim().toLowerCase();
+      $('.rc-studybox').classList.toggle('rc-study', $('#rc-study').checked);
+      fillTable($('#tbl-preg'), 'preguntas', ['condicion', 'pregunta', 'respuesta', 'pagina', 'soporte'],
+        (r) => (state.preguntas === 'Todas' || r.condicion === state.preguntas) && (!q || (r.pregunta + ' ' + r.respuesta).toLowerCase().includes(q)),
+        { wide: ['pregunta', 'respuesta'], nowrap: ['pagina', 'condicion'], ans: 'respuesta', toggle: true });
+    }
+    if (current === 'verificar') {
+      renderChips($('#chips-ver'), 'verificar');
+      const ord = { Alta: 0, Media: 1, Baja: 2 };
+      fillTable($('#tbl-ver'), 'verificar', ['prioridad', 'condicion', 'hallazgo', 'detalle', 'pagina', 'accion'],
+        (r) => state.verificar === 'Todas' || r.condicion === state.verificar,
+        { wide: ['hallazgo', 'detalle', 'accion'], nowrap: ['pagina', 'condicion'], sort: (a, b) => (ord[a.prioridad] - ord[b.prioridad]) || String(a.id).localeCompare(String(b.id)) });
+      fillTable($('#tbl-cuadre'), 'cuadre_docentes', ['periodo', 'total', 'suma_dedicacion', 'diferencia']);
+    }
+    if (current === 'anexos') fillTable($('#tbl-anx'), 'anexos', ['condicion', 'anexo', 'descripcion'], null, { wide: ['descripcion'], nowrap: ['condicion', 'anexo'] });
+  }
+
+  function show(id) {
+    if (!PANES.includes(id)) return;
+    current = id;
+    $$('.rc-tab').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.pane === id)));
+    PANES.forEach((p) => { document.getElementById(p).hidden = p !== id; });
+    render();
+    dash.setLink(id);
+  }
+  $$('.rc-tab').forEach((t) => t.addEventListener('click', () => show(t.dataset.pane)));
+  $('#rc-q').addEventListener('input', (e) => { state.q = e.target.value; render(); });
+  $('#rc-study').addEventListener('change', render);
+
+  dash.onData(render);
+  const named = location.hash.slice(1);
+  if (PANES.includes(named)) show(named);
+})();
+</script>
+</body></html>

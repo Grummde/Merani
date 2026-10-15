@@ -1,0 +1,1154 @@
+[
+{
+"serie": "matricula_total",
+"categoria": "2020-1",
+"subcategoria": "",
+"valor": 299,
+"pagina": "p. 27",
+"nota": "Gráfica 2"
+},
+{
+"serie": "matricula_total",
+"categoria": "2020-2",
+"subcategoria": "",
+"valor": 205,
+"pagina": "p. 27",
+"nota": "Gráfica 2"
+},
+{
+"serie": "matricula_total",
+"categoria": "2021-1",
+"subcategoria": "",
+"valor": 252,
+"pagina": "p. 27",
+"nota": "Gráfica 2"
+},
+{
+"serie": "matricula_total",
+"categoria": "2021-2",
+"subcategoria": "",
+"valor": 204,
+"pagina": "p. 27",
+"nota": "Gráfica 2"
+},
+{
+"serie": "matricula_total",
+"categoria": "2022-1",
+"subcategoria": "",
+"valor": 203,
+"pagina": "p. 27",
+"nota": "Gráfica 2"
+},
+{
+"serie": "matricula_total",
+"categoria": "2022-2",
+"subcategoria": "",
+"valor": 160,
+"pagina": "p. 27",
+"nota": "Gráfica 2"
+},
+{
+"serie": "matricula_total",
+"categoria": "2023-1",
+"subcategoria": "",
+"valor": 195,
+"pagina": "p. 27",
+"nota": "Gráfica 2"
+},
+{
+"serie": "matricula_total",
+"categoria": "2023-2",
+"subcategoria": "",
+"valor": 199,
+"pagina": "p. 27",
+"nota": "Gráfica 2"
+},
+{
+"serie": "matricula_total",
+"categoria": "2024-1",
+"subcategoria": "",
+"valor": 249,
+"pagina": "p. 27",
+"nota": "Gráfica 2"
+},
+{
+"serie": "matricula_total",
+"categoria": "2024-2",
+"subcategoria": "",
+"valor": 227,
+"pagina": "p. 27",
+"nota": "Gráfica 2"
+},
+{
+"serie": "matricula_total",
+"categoria": "2025-1",
+"subcategoria": "",
+"valor": 233,
+"pagina": "p. 27",
+"nota": "Gráfica 2"
+},
+{
+"serie": "matricula_total",
+"categoria": "2025-2",
+"subcategoria": "",
+"valor": 250,
+"pagina": "p. 27",
+"nota": "Gráfica 2"
+},
+{
+"serie": "matricula_total",
+"categoria": "2026-1",
+"subcategoria": "",
+"valor": 273,
+"pagina": "p. 27",
+"nota": "Gráfica 2"
+},
+{
+"serie": "primer_curso",
+"categoria": "2020-1",
+"subcategoria": "Inscritos",
+"valor": 90,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2020-1",
+"subcategoria": "Admitidos",
+"valor": 86,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2020-1",
+"subcategoria": "Matriculados primer curso",
+"valor": 81,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2020-2",
+"subcategoria": "Inscritos",
+"valor": 40,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2020-2",
+"subcategoria": "Admitidos",
+"valor": 32,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2020-2",
+"subcategoria": "Matriculados primer curso",
+"valor": 25,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2021-1",
+"subcategoria": "Inscritos",
+"valor": 106,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2021-1",
+"subcategoria": "Admitidos",
+"valor": 81,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2021-1",
+"subcategoria": "Matriculados primer curso",
+"valor": 73,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2021-2",
+"subcategoria": "Inscritos",
+"valor": 49,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2021-2",
+"subcategoria": "Admitidos",
+"valor": 28,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2021-2",
+"subcategoria": "Matriculados primer curso",
+"valor": 23,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2022-1",
+"subcategoria": "Inscritos",
+"valor": 61,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2022-1",
+"subcategoria": "Admitidos",
+"valor": 44,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2022-1",
+"subcategoria": "Matriculados primer curso",
+"valor": 43,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2022-2",
+"subcategoria": "Inscritos",
+"valor": 39,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2022-2",
+"subcategoria": "Admitidos",
+"valor": 16,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2022-2",
+"subcategoria": "Matriculados primer curso",
+"valor": 16,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2023-1",
+"subcategoria": "Inscritos",
+"valor": 206,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2023-1",
+"subcategoria": "Admitidos",
+"valor": 102,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2023-1",
+"subcategoria": "Matriculados primer curso",
+"valor": 91,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2023-2",
+"subcategoria": "Inscritos",
+"valor": 80,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2023-2",
+"subcategoria": "Admitidos",
+"valor": 48,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2023-2",
+"subcategoria": "Matriculados primer curso",
+"valor": 42,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2024-1",
+"subcategoria": "Inscritos",
+"valor": 141,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2024-1",
+"subcategoria": "Admitidos",
+"valor": 90,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2024-1",
+"subcategoria": "Matriculados primer curso",
+"valor": 90,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2024-2",
+"subcategoria": "Inscritos",
+"valor": 49,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2024-2",
+"subcategoria": "Admitidos",
+"valor": 45,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2024-2",
+"subcategoria": "Matriculados primer curso",
+"valor": 36,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2025-1",
+"subcategoria": "Inscritos",
+"valor": 81,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2025-1",
+"subcategoria": "Admitidos",
+"valor": 80,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2025-1",
+"subcategoria": "Matriculados primer curso",
+"valor": 64,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2025-2",
+"subcategoria": "Inscritos",
+"valor": 55,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2025-2",
+"subcategoria": "Admitidos",
+"valor": 45,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "primer_curso",
+"categoria": "2025-2",
+"subcategoria": "Matriculados primer curso",
+"valor": 42,
+"pagina": "p. 26",
+"nota": "Gráfica 1"
+},
+{
+"serie": "graduados",
+"categoria": "2020",
+"subcategoria": "Tecnología en Criminalística y Ciencias Forenses",
+"valor": 56,
+"pagina": "p. 30",
+"nota": "Gráfica 4"
+},
+{
+"serie": "graduados",
+"categoria": "2021",
+"subcategoria": "Tecnología en Criminalística y Ciencias Forenses",
+"valor": 58,
+"pagina": "p. 30",
+"nota": "Gráfica 4"
+},
+{
+"serie": "graduados",
+"categoria": "2022",
+"subcategoria": "Tecnología en Criminalística y Ciencias Forenses",
+"valor": 70,
+"pagina": "p. 30",
+"nota": "Gráfica 4"
+},
+{
+"serie": "graduados",
+"categoria": "2023",
+"subcategoria": "Tecnología en Criminalística y Ciencias Forenses",
+"valor": 19,
+"pagina": "p. 30",
+"nota": "Gráfica 4"
+},
+{
+"serie": "graduados",
+"categoria": "2024",
+"subcategoria": "Tecnología en Criminalística y Ciencias Forenses",
+"valor": 3,
+"pagina": "p. 30",
+"nota": "Gráfica 4"
+},
+{
+"serie": "graduados",
+"categoria": "2022",
+"subcategoria": "Tecnología en Investigación Criminal y Ciencias Forenses",
+"valor": 1,
+"pagina": "p. 30",
+"nota": "Gráfica 4 (2026 = solo 2026-1)"
+},
+{
+"serie": "graduados",
+"categoria": "2023",
+"subcategoria": "Tecnología en Investigación Criminal y Ciencias Forenses",
+"valor": 31,
+"pagina": "p. 30",
+"nota": "Gráfica 4 (2026 = solo 2026-1)"
+},
+{
+"serie": "graduados",
+"categoria": "2024",
+"subcategoria": "Tecnología en Investigación Criminal y Ciencias Forenses",
+"valor": 33,
+"pagina": "p. 30",
+"nota": "Gráfica 4 (2026 = solo 2026-1)"
+},
+{
+"serie": "graduados",
+"categoria": "2025",
+"subcategoria": "Tecnología en Investigación Criminal y Ciencias Forenses",
+"valor": 46,
+"pagina": "p. 30",
+"nota": "Gráfica 4 (2026 = solo 2026-1)"
+},
+{
+"serie": "graduados",
+"categoria": "2026",
+"subcategoria": "Tecnología en Investigación Criminal y Ciencias Forenses",
+"valor": 1,
+"pagina": "p. 30",
+"nota": "Gráfica 4 (2026 = solo 2026-1)"
+},
+{
+"serie": "graduados",
+"categoria": "2025",
+"subcategoria": "Tecnología en Gestión Criminalística y Análisis Forense",
+"valor": 7,
+"pagina": "p. 30",
+"nota": "Gráfica 4 (2026 = solo 2026-1)"
+},
+{
+"serie": "graduados",
+"categoria": "2026",
+"subcategoria": "Tecnología en Gestión Criminalística y Análisis Forense",
+"valor": 30,
+"pagina": "p. 30",
+"nota": "Gráfica 4 (2026 = solo 2026-1)"
+},
+{
+"serie": "vacantes",
+"categoria": "Jooble",
+"subcategoria": "",
+"valor": 921,
+"pagina": "p. 28",
+"nota": "Gráfica 3; ventana 2024–2026"
+},
+{
+"serie": "vacantes",
+"categoria": "Fiscalía General de la Nación",
+"subcategoria": "",
+"valor": 500,
+"pagina": "p. 28",
+"nota": "Gráfica 3; ventana 2024–2026"
+},
+{
+"serie": "vacantes",
+"categoria": "Procuraduría",
+"subcategoria": "",
+"valor": 17,
+"pagina": "p. 28",
+"nota": "Gráfica 3; ventana 2024–2026"
+},
+{
+"serie": "vacantes",
+"categoria": "Elempleo.com",
+"subcategoria": "",
+"valor": 14,
+"pagina": "p. 28",
+"nota": "Gráfica 3; ventana 2024–2026"
+},
+{
+"serie": "vacantes",
+"categoria": "Computrabajo",
+"subcategoria": "",
+"valor": 6,
+"pagina": "p. 28",
+"nota": "Gráfica 3; ventana 2024–2026"
+},
+{
+"serie": "ole_sector",
+"categoria": "Sector privado",
+"subcategoria": "",
+"valor": 51.47,
+"pagina": "p. 32",
+"nota": "Gráfica 8; porcentaje"
+},
+{
+"serie": "ole_sector",
+"categoria": "Sector público",
+"subcategoria": "",
+"valor": 36.76,
+"pagina": "p. 32",
+"nota": "Gráfica 8; porcentaje"
+},
+{
+"serie": "ole_sector",
+"categoria": "Economía mixta",
+"subcategoria": "",
+"valor": 10.29,
+"pagina": "p. 32",
+"nota": "Gráfica 8; porcentaje"
+},
+{
+"serie": "ole_sector",
+"categoria": "ONG, sin ánimo de lucro o fundaciones",
+"subcategoria": "",
+"valor": 1.47,
+"pagina": "p. 32",
+"nota": "Gráfica 8; porcentaje"
+},
+{
+"serie": "ole_contrato",
+"categoria": "Término indefinido",
+"subcategoria": "",
+"valor": 42.47,
+"pagina": "p. 32",
+"nota": "Gráfica 7; porcentaje"
+},
+{
+"serie": "ole_contrato",
+"categoria": "Obra o labor",
+"subcategoria": "",
+"valor": 31.51,
+"pagina": "p. 32",
+"nota": "Gráfica 7; porcentaje"
+},
+{
+"serie": "ole_contrato",
+"categoria": "Fijo ≤ 6 meses",
+"subcategoria": "",
+"valor": 14.38,
+"pagina": "p. 32",
+"nota": "Gráfica 7; porcentaje"
+},
+{
+"serie": "ole_contrato",
+"categoria": "Fijo > 6 meses",
+"subcategoria": "",
+"valor": 11.64,
+"pagina": "p. 32",
+"nota": "Gráfica 7; porcentaje"
+},
+{
+"serie": "ole_cargo",
+"categoria": "Operativo y de apoyo",
+"subcategoria": "",
+"valor": 32.35,
+"pagina": "p. 33",
+"nota": "Gráfica 9; porcentaje"
+},
+{
+"serie": "ole_cargo",
+"categoria": "Otras categorías",
+"subcategoria": "",
+"valor": 26.47,
+"pagina": "p. 33",
+"nota": "Gráfica 9; porcentaje"
+},
+{
+"serie": "ole_cargo",
+"categoria": "Analista",
+"subcategoria": "",
+"valor": 19.12,
+"pagina": "p. 33",
+"nota": "Gráfica 9; porcentaje"
+},
+{
+"serie": "ole_cargo",
+"categoria": "Asistencial",
+"subcategoria": "",
+"valor": 16.18,
+"pagina": "p. 33",
+"nota": "Gráfica 9; porcentaje"
+},
+{
+"serie": "ole_cargo",
+"categoria": "Especializado",
+"subcategoria": "",
+"valor": 5.88,
+"pagina": "p. 33",
+"nota": "Gráfica 9; porcentaje"
+},
+{
+"serie": "ole_categoria",
+"categoria": "Empleado dependiente",
+"subcategoria": "",
+"valor": 76.04,
+"pagina": "p. 31",
+"nota": "Gráfica 6; porcentaje"
+},
+{
+"serie": "ole_categoria",
+"categoria": "Empresa o negocio particular",
+"subcategoria": "",
+"valor": 13.02,
+"pagina": "p. 31",
+"nota": "Gráfica 6; porcentaje"
+},
+{
+"serie": "ole_categoria",
+"categoria": "Trabajador independiente",
+"subcategoria": "",
+"valor": 10.94,
+"pagina": "p. 31",
+"nota": "Gráfica 6; porcentaje"
+},
+{
+"serie": "saber_pct",
+"categoria": "Lectura crítica",
+"subcategoria": "Mejora de nivel",
+"valor": 37.9,
+"pagina": "p. 66",
+"nota": "Tabla 34; porcentaje de graduados"
+},
+{
+"serie": "saber_pct",
+"categoria": "Lectura crítica",
+"subcategoria": "Sin cambio",
+"valor": 47.1,
+"pagina": "p. 66",
+"nota": "Tabla 34; porcentaje de graduados"
+},
+{
+"serie": "saber_pct",
+"categoria": "Lectura crítica",
+"subcategoria": "Retroceso",
+"valor": 15.0,
+"pagina": "p. 66",
+"nota": "Tabla 34; porcentaje de graduados"
+},
+{
+"serie": "saber_n",
+"categoria": "Lectura crítica",
+"subcategoria": "",
+"valor": 140,
+"pagina": "p. 66",
+"nota": "Tabla 34; graduados con dato"
+},
+{
+"serie": "saber_delta",
+"categoria": "Lectura crítica",
+"subcategoria": "",
+"valor": 0.33,
+"pagina": "p. 66",
+"nota": "Tabla 34; delta promedio de nivel"
+},
+{
+"serie": "saber_pct",
+"categoria": "Sociales y ciudadanas",
+"subcategoria": "Mejora de nivel",
+"valor": 33.1,
+"pagina": "p. 66",
+"nota": "Tabla 34; porcentaje de graduados"
+},
+{
+"serie": "saber_pct",
+"categoria": "Sociales y ciudadanas",
+"subcategoria": "Sin cambio",
+"valor": 51.8,
+"pagina": "p. 66",
+"nota": "Tabla 34; porcentaje de graduados"
+},
+{
+"serie": "saber_pct",
+"categoria": "Sociales y ciudadanas",
+"subcategoria": "Retroceso",
+"valor": 15.1,
+"pagina": "p. 66",
+"nota": "Tabla 34; porcentaje de graduados"
+},
+{
+"serie": "saber_n",
+"categoria": "Sociales y ciudadanas",
+"subcategoria": "",
+"valor": 139,
+"pagina": "p. 66",
+"nota": "Tabla 34; graduados con dato"
+},
+{
+"serie": "saber_delta",
+"categoria": "Sociales y ciudadanas",
+"subcategoria": "",
+"valor": 0.22,
+"pagina": "p. 66",
+"nota": "Tabla 34; delta promedio de nivel"
+},
+{
+"serie": "saber_pct",
+"categoria": "Inglés",
+"subcategoria": "Mejora de nivel",
+"valor": 81.0,
+"pagina": "p. 66",
+"nota": "Tabla 34; porcentaje de graduados"
+},
+{
+"serie": "saber_pct",
+"categoria": "Inglés",
+"subcategoria": "Sin cambio",
+"valor": 17.5,
+"pagina": "p. 66",
+"nota": "Tabla 34; porcentaje de graduados"
+},
+{
+"serie": "saber_pct",
+"categoria": "Inglés",
+"subcategoria": "Retroceso",
+"valor": 1.5,
+"pagina": "p. 66",
+"nota": "Tabla 34; porcentaje de graduados"
+},
+{
+"serie": "saber_n",
+"categoria": "Inglés",
+"subcategoria": "",
+"valor": 137,
+"pagina": "p. 66",
+"nota": "Tabla 34; graduados con dato"
+},
+{
+"serie": "saber_delta",
+"categoria": "Inglés",
+"subcategoria": "",
+"valor": 1.17,
+"pagina": "p. 66",
+"nota": "Tabla 34; delta promedio de nivel"
+},
+{
+"serie": "docentes_total",
+"categoria": "2021-1",
+"subcategoria": "",
+"valor": 14,
+"pagina": "p. 122",
+"nota": "Gráfica 17"
+},
+{
+"serie": "docentes_total",
+"categoria": "2021-2",
+"subcategoria": "",
+"valor": 14,
+"pagina": "p. 122",
+"nota": "Gráfica 17"
+},
+{
+"serie": "docentes_total",
+"categoria": "2022-1",
+"subcategoria": "",
+"valor": 13,
+"pagina": "p. 122",
+"nota": "Gráfica 17"
+},
+{
+"serie": "docentes_total",
+"categoria": "2022-2",
+"subcategoria": "",
+"valor": 15,
+"pagina": "p. 122",
+"nota": "Gráfica 17"
+},
+{
+"serie": "docentes_total",
+"categoria": "2023-1",
+"subcategoria": "",
+"valor": 22,
+"pagina": "p. 122",
+"nota": "Gráfica 17"
+},
+{
+"serie": "docentes_total",
+"categoria": "2023-2",
+"subcategoria": "",
+"valor": 16,
+"pagina": "p. 122",
+"nota": "Gráfica 17"
+},
+{
+"serie": "docentes_total",
+"categoria": "2024-1",
+"subcategoria": "",
+"valor": 15,
+"pagina": "p. 122",
+"nota": "Gráfica 17"
+},
+{
+"serie": "docentes_total",
+"categoria": "2024-2",
+"subcategoria": "",
+"valor": 19,
+"pagina": "p. 122",
+"nota": "Gráfica 17"
+},
+{
+"serie": "docentes_total",
+"categoria": "2025-1",
+"subcategoria": "",
+"valor": 22,
+"pagina": "p. 122",
+"nota": "Gráfica 17"
+},
+{
+"serie": "docentes_total",
+"categoria": "2025-2",
+"subcategoria": "",
+"valor": 24,
+"pagina": "p. 122",
+"nota": "Gráfica 17"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2021-1",
+"subcategoria": "Tiempo completo",
+"valor": 5,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2021-1",
+"subcategoria": "Medio tiempo",
+"valor": 5,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2021-1",
+"subcategoria": "Tiempo parcial",
+"valor": 2,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2021-2",
+"subcategoria": "Tiempo completo",
+"valor": 7,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2021-2",
+"subcategoria": "Medio tiempo",
+"valor": 3,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2021-2",
+"subcategoria": "Tiempo parcial",
+"valor": 2,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2022-1",
+"subcategoria": "Tiempo completo",
+"valor": 6,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2022-1",
+"subcategoria": "Medio tiempo",
+"valor": 2,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2022-1",
+"subcategoria": "Tiempo parcial",
+"valor": 3,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2022-2",
+"subcategoria": "Tiempo completo",
+"valor": 6,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2022-2",
+"subcategoria": "Medio tiempo",
+"valor": 2,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2022-2",
+"subcategoria": "Tiempo parcial",
+"valor": 6,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2023-1",
+"subcategoria": "Tiempo completo",
+"valor": 6,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2023-1",
+"subcategoria": "Medio tiempo",
+"valor": 6,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2023-1",
+"subcategoria": "Tiempo parcial",
+"valor": 7,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2023-2",
+"subcategoria": "Tiempo completo",
+"valor": 5,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2023-2",
+"subcategoria": "Medio tiempo",
+"valor": 5,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2023-2",
+"subcategoria": "Tiempo parcial",
+"valor": 4,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2024-1",
+"subcategoria": "Tiempo completo",
+"valor": 4,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2024-1",
+"subcategoria": "Medio tiempo",
+"valor": 7,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2024-1",
+"subcategoria": "Tiempo parcial",
+"valor": 4,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2024-2",
+"subcategoria": "Tiempo completo",
+"valor": 4,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2024-2",
+"subcategoria": "Medio tiempo",
+"valor": 11,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2024-2",
+"subcategoria": "Tiempo parcial",
+"valor": 4,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2025-1",
+"subcategoria": "Tiempo completo",
+"valor": 6,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2025-1",
+"subcategoria": "Medio tiempo",
+"valor": 11,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2025-1",
+"subcategoria": "Tiempo parcial",
+"valor": 5,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2025-2",
+"subcategoria": "Tiempo completo",
+"valor": 7,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2025-2",
+"subcategoria": "Medio tiempo",
+"valor": 13,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "docentes_dedicacion",
+"categoria": "2025-2",
+"subcategoria": "Tiempo parcial",
+"valor": 4,
+"pagina": "p. 122",
+"nota": "Gráfica 18"
+},
+{
+"serie": "timis",
+"categoria": "2023-1",
+"subcategoria": "",
+"valor": 14,
+"pagina": "p. 92",
+"nota": "Tabla 38"
+},
+{
+"serie": "timis",
+"categoria": "2023-2",
+"subcategoria": "",
+"valor": 34,
+"pagina": "p. 92",
+"nota": "Tabla 38"
+},
+{
+"serie": "timis",
+"categoria": "2024-1",
+"subcategoria": "",
+"valor": 16,
+"pagina": "p. 92",
+"nota": "Tabla 38"
+},
+{
+"serie": "timis",
+"categoria": "2024-2",
+"subcategoria": "",
+"valor": 19,
+"pagina": "p. 92",
+"nota": "Tabla 38"
+},
+{
+"serie": "timis",
+"categoria": "2025-1",
+"subcategoria": "",
+"valor": 17,
+"pagina": "p. 92",
+"nota": "Tabla 38"
+},
+{
+"serie": "timis",
+"categoria": "2025-2",
+"subcategoria": "",
+"valor": 13,
+"pagina": "p. 92",
+"nota": "Tabla 38"
+},
+{
+"serie": "timis",
+"categoria": "2026-1",
+"subcategoria": "",
+"valor": 10,
+"pagina": "p. 92",
+"nota": "Tabla 38"
+}
+]
