@@ -1,0 +1,436 @@
+[
+{
+"id": "H01",
+"condicion": "Contexto",
+"tema": "Institución",
+"dato": "Fundación de Educación Superior Alberto Merani; código SNIES 3725; institución tecnológica de naturaleza privada, con ciclos propedéuticos; sede en Bogotá.",
+"pagina": "p. 11"
+},
+{
+"id": "H02",
+"condicion": "Contexto",
+"tema": "Programa",
+"dato": "Tecnología en Gestión Criminalística y Análisis Forense; SNIES 117673; pregrado tecnológico presencial de 6 semestres; admisión semestral; jornada diurna y nocturna; 110 estudiantes en el primer periodo; título de Tecnólogo/a.",
+"pagina": "p. 12"
+},
+{
+"id": "H03",
+"condicion": "Contexto",
+"tema": "Historia del registro calificado",
+"dato": "Primer registro: Res. 5147 del 8-nov-2005. Primera renovación: Res. 451 del 23-ene-2013. Segunda renovación con modificación curricular: Res. 010394 del 24-jun-2020. Modificación por redefinición institucional: Res. 025569 del 27-dic-2024.",
+"pagina": "p. 11"
+},
+{
+"id": "H04",
+"condicion": "Contexto",
+"tema": "Articulación por ciclos",
+"dato": "Articulado con el programa Investigación Criminalística y Judicial, aprobado por Res. 018446 del 21-oct-2024.",
+"pagina": "p. 11"
+},
+{
+"id": "H05",
+"condicion": "Contexto",
+"tema": "Fundamento de la solicitud",
+"dato": "Autoevaluación de 2023 y seguimiento al plan de mejoramiento; mantiene modalidad presencial y lugar de desarrollo en Bogotá D.C.; se presentan las nueve condiciones del Decreto 1330 de 2019.",
+"pagina": "p. 12"
+},
+{
+"id": "H06",
+"condicion": "Contexto",
+"tema": "Idiomas",
+"dato": "El programa no exige idioma para el ingreso ni para el egreso (Tabla 3).",
+"pagina": "p. 12"
+},
+{
+"id": "H07",
+"condicion": "CC1 Denominación",
+"tema": "Nivel y denominación",
+"dato": "La denominación se declara coherente con el Decreto 1330 de 2019 y con el nivel 5 de la CINE-N (educación terciaria de ciclo corto).",
+"pagina": "p. 13"
+},
+{
+"id": "H08",
+"condicion": "CC1 Denominación",
+"tema": "Clasificación (Tabla 4)",
+"dato": "Campo amplio: Administración de Empresas y Derecho; campo específico y detallado: Derecho; área: Ciencias Sociales y Humanas; NBC: Derecho y afines. El ajuste de área y NBC se sustenta en la CINE-F y el Decreto 2484 de 2014.",
+"pagina": "pp. 13–14"
+},
+{
+"id": "H09",
+"condicion": "CC1 Denominación",
+"tema": "Perfil de egreso",
+"dato": "Tecnólogo competente para el manejo y procesamiento del lugar de los hechos y la identificación, recolección, preservación, procesamiento y análisis de indicios; la Tabla 5 relaciona propósitos de formación con asignaturas.",
+"pagina": "p. 14"
+},
+{
+"id": "H10",
+"condicion": "CC2 Justificación",
+"tema": "Demanda del programa",
+"dato": "997 inscritos y 572 matriculados en primer curso entre 2020-1 y 2025-2; selectividad global de 69,9 % y conversión de inscritos a matrícula de 82,06 %.",
+"pagina": "p. 26"
+},
+{
+"id": "H11",
+"condicion": "CC2 Justificación",
+"tema": "Demanda insatisfecha",
+"dato": "Entre 50 y 100 aspirantes por periodo no logran acceder al programa; es el sustento de la ampliación de cupos.",
+"pagina": "p. 26"
+},
+{
+"id": "H12",
+"condicion": "CC2 Justificación",
+"tema": "Matrícula total",
+"dato": "Tras la caída de 2022-2, pasa de 195 estudiantes en 2023-1 a 273 en 2026-1.",
+"pagina": "p. 27"
+},
+{
+"id": "H13",
+"condicion": "CC2 Justificación",
+"tema": "Oferta nacional",
+"dato": "Según SNIES 2026, Bogotá concentra 4 de los 14 programas tecnológicos activos identificados (28,6 %).",
+"pagina": "p. 25"
+},
+{
+"id": "H14",
+"condicion": "CC2 Justificación",
+"tema": "Pertinencia laboral",
+"dato": "Vacantes observadas entre 2024 y 2026 en portales de empleo y convocatorias públicas; entre 55 % y 65 % se concentran en Bogotá y su área metropolitana. Tabla 8 presenta rangos salariales aproximados.",
+"pagina": "pp. 28–29"
+},
+{
+"id": "H15",
+"condicion": "CC2 Justificación",
+"tema": "Graduados y OLE",
+"dato": "355 graduados reportados entre 2020 y 2026-1 (todas las denominaciones); 312 respondieron la encuesta de momento cero del OLE.",
+"pagina": "p. 30"
+},
+{
+"id": "H16",
+"condicion": "CC2 Justificación",
+"tema": "Atributo diferencial",
+"dato": "El modelo pedagógico institucional «Pedagogía Conceptual» se declara como carácter diferencial del programa.",
+"pagina": "p. 33"
+},
+{
+"id": "H17",
+"condicion": "CC3 Aspectos curriculares",
+"tema": "Créditos",
+"dato": "104 créditos (100 obligatorios y 4 electivos) en 6 periodos; promedio de 17 créditos por periodo; 2.048 horas de acompañamiento docente y 2.944 de trabajo autónomo.",
+"pagina": "p. 41"
+},
+{
+"id": "H18",
+"condicion": "CC3 Aspectos curriculares",
+"tema": "Tipos de asignatura",
+"dato": "Instrumental: por crédito, 1 h de acompañamiento y 2 h autónomas. Operacional: por crédito, 2 h de acompañamiento y 1 h autónoma (Tabla 12).",
+"pagina": "p. 41"
+},
+{
+"id": "H19",
+"condicion": "CC3 Aspectos curriculares",
+"tema": "Organización curricular",
+"dato": "Tres líneas: Formación Humana Integral, Formación Laboral/Profesional y Formación en Segunda Lengua; cada una con componentes y áreas.",
+"pagina": "p. 42"
+},
+{
+"id": "H20",
+"condicion": "CC3 Aspectos curriculares",
+"tema": "Componente propedéutico",
+"dato": "4 créditos en 2 asignaturas (Administración en la investigación judicial y Estadística forense), ubicadas en 6.º semestre; no son obligatorias para el título, pero sí requisito para el ciclo profesional.",
+"pagina": "pp. 41–42, 52"
+},
+{
+"id": "H21",
+"condicion": "CC3 Aspectos curriculares",
+"tema": "Sistema de niveles",
+"dato": "Cuatro niveles de aprendizaje y evaluación: básico, intermedio, apropiación y avanzado; valor de aprobación de 4,0/5,0.",
+"pagina": "pp. 60, 81"
+},
+{
+"id": "H22",
+"condicion": "CC3 Aspectos curriculares",
+"tema": "Seguimiento a resultados de aprendizaje",
+"dato": "Triangulación entre encuestas de percepción por asignatura (desde 2025), tabulación de pérdida académica (Anexo 3.3) y plataforma Q10.",
+"pagina": "pp. 60–65"
+},
+{
+"id": "H23",
+"condicion": "CC3 Aspectos curriculares",
+"tema": "Validación externa Saber 11 – TyT",
+"dato": "Estudio con 142 graduados (2023-1 a 2025-2): 81,0 % mejora en inglés, 37,9 % en lectura crítica y 33,1 % en competencias ciudadanas, esta última señalada como prioritaria para intervención curricular.",
+"pagina": "pp. 66–67"
+},
+{
+"id": "H24",
+"condicion": "CC3 Aspectos curriculares",
+"tema": "Flexibilidad curricular",
+"dato": "Cuatro rutas: disciplinar e interdisciplinar (electivas), transversalidad, requisitos de grado (trabajo de grado o diplomado) e inscripción de asignaturas.",
+"pagina": "p. 52"
+},
+{
+"id": "H25",
+"condicion": "CC3 Aspectos curriculares",
+"tema": "Prácticas como flexibilidad",
+"dato": "Entre 19 y 37 estudiantes en práctica por periodo entre 2021-2 y 2026-1.",
+"pagina": "p. 53"
+},
+{
+"id": "H26",
+"condicion": "CC4 Actividades académicas",
+"tema": "Modelo del Hexágono",
+"dato": "Las actividades se diseñan con el Modelo del Hexágono; el Syllabus recoge la reflexión pedagógica y el Plan de Aula el diseño didáctico, ambos públicos en Q10.",
+"pagina": "pp. 70, 75"
+},
+{
+"id": "H27",
+"condicion": "CC4 Actividades académicas",
+"tema": "Práctica en entorno laboral",
+"dato": "Asignatura con modalidades que incluyen contrato de aprendizaje, investigación y práctica en el consultorio; seguimiento en cuatro etapas (básico, intermedio, apropiación y avanzado).",
+"pagina": "pp. 75–76"
+},
+{
+"id": "H28",
+"condicion": "CC4 Actividades académicas",
+"tema": "Caracterización estudiantil",
+"dato": "Los estratos 2 y 3 superan el 85 % (estrato 2 cerca del 54 % y estrato 3 cerca del 32 %); cerca del 40 % de los estudiantes trabaja.",
+"pagina": "p. 79"
+},
+{
+"id": "H29",
+"condicion": "CC4 Actividades académicas",
+"tema": "Inasistencias y justificaciones",
+"dato": "Motivos: incapacidades 33,73 %, otras situaciones 29,96 %, permisos laborales 23,61 % y citas médicas 11,16 %; mayor concentración en 4.º y 5.º semestre.",
+"pagina": "p. 81"
+},
+{
+"id": "H30",
+"condicion": "CC4 Actividades académicas",
+"tema": "Alertas tempranas",
+"dato": "En el observador estudiantil, 88,41 % de los reportes corresponde a criterios de bienestar (244 casos); 52,71 % en jornada diurna y 47,29 % en nocturna.",
+"pagina": "p. 83"
+},
+{
+"id": "H31",
+"condicion": "CC4 Actividades académicas",
+"tema": "Becas y apoyos",
+"dato": "De 6 beneficios en 2020 a 39 en 2025-2; incluye la estrategia «Generación Avanza».",
+"pagina": "p. 82"
+},
+{
+"id": "H32",
+"condicion": "CC4 Actividades académicas",
+"tema": "Requisitos adicionales de grado",
+"dato": "Aprobar la opción de grado, presentar las pruebas de Estado del nivel, estar a paz y salvo y pagar derechos de grado.",
+"pagina": "p. 84"
+},
+{
+"id": "H33",
+"condicion": "CC5 Investigación",
+"tema": "Grupo de investigación",
+"dato": "Unidad Investigativa Merani, inscrito en MinCiencias con el código COL0183218.",
+"pagina": "p. 89"
+},
+{
+"id": "H34",
+"condicion": "CC5 Investigación",
+"tema": "Líneas de investigación",
+"dato": "Gestión del conocimiento criminalístico; Procedimientos investigativos judiciales y análisis forense; Ética, criminalidad y desarrollo social.",
+"pagina": "p. 89"
+},
+{
+"id": "H35",
+"condicion": "CC5 Investigación",
+"tema": "Proyectos",
+"dato": "Siete proyectos de investigación vinculados al grupo durante la vigencia del registro calificado; varios en desarrollo.",
+"pagina": "p. 90"
+},
+{
+"id": "H36",
+"condicion": "CC5 Investigación",
+"tema": "Investigación formativa",
+"dato": "Método curricular TIMI (Trabajo Integrador del Meranista Investigador), línea de formación en investigación en los tres primeros semestres y tres semilleros.",
+"pagina": "pp. 91–93"
+},
+{
+"id": "H37",
+"condicion": "CC5 Investigación",
+"tema": "Eventos científicos",
+"dato": "Congresos internacionales de 2021 a 2025 (incluido el IX Congreso Internacional de Investigación Criminal, 2025) y un conversatorio internacional.",
+"pagina": "pp. 97–99"
+},
+{
+"id": "H38",
+"condicion": "CC5 Investigación",
+"tema": "Publicaciones",
+"dato": "Memorias de congresos (ISSN 3028-7553; tres ediciones y una próxima) y revista Criminalística 20/20 (ISSN 2322-8377; ocho ediciones).",
+"pagina": "pp. 100–101"
+},
+{
+"id": "H39",
+"condicion": "CC5 Investigación",
+"tema": "Financiación",
+"dato": "Rubro del 2 % de los ingresos por matrícula para investigación; el Comité de investigaciones define su distribución.",
+"pagina": "p. 102"
+},
+{
+"id": "H40",
+"condicion": "CC5 Investigación",
+"tema": "Dedicación docente a investigación",
+"dato": "La función de investigación pasa de 3,98 % del plan de trabajo en 2021 a 16,12 % en 2026.",
+"pagina": "p. 126"
+},
+{
+"id": "H41",
+"condicion": "CC6 Sector externo",
+"tema": "Educación continua",
+"dato": "Punto de equilibrio mínimo de 12 matriculados por oferta; participantes: 32,4 % estudiantes activos (diplomado como opción de grado) y 21 % graduados.",
+"pagina": "pp. 103–104"
+},
+{
+"id": "H42",
+"condicion": "CC6 Sector externo",
+"tema": "Proyectos y consultorías",
+"dato": "Trece entidades contratantes, entre ellas Secretaría Distrital de Hacienda, Secretaría Distrital de Integración Social, Ministerio de Vivienda, Superintendencia Nacional de Salud, Ejército Nacional y cinco Fondos de Desarrollo Local de Bogotá.",
+"pagina": "p. 104"
+},
+{
+"id": "H43",
+"condicion": "CC6 Sector externo",
+"tema": "Convenio marco 2026",
+"dato": "Convenio FIPCAM – FESAM (Merani Proyectos – UMERANI) suscrito el 15-ene-2026, con vigencia hasta el 31-ago-2026, para apoyar cinco proyectos territoriales en Bogotá.",
+"pagina": "p. 104"
+},
+{
+"id": "H44",
+"condicion": "CC6 Sector externo",
+"tema": "Prácticas y convenios",
+"dato": "Practicantes asignados: 33 en 2021 y 63 en 2022; escenarios como Consultorio Criminalístico, Coordinadora Mercantil, Valuative, FUNVIDES, SECAP, SEGIN, Technical Defense y UID (Tabla 45).",
+"pagina": "pp. 118–119"
+},
+{
+"id": "H45",
+"condicion": "CC6 Sector externo",
+"tema": "Plan de relacionamiento",
+"dato": "Plan con estrategias, responsables y resultados por año, con inversión proyectada del 1 % de los ingresos por matrícula (Anexo 6.2).",
+"pagina": "p. 120"
+},
+{
+"id": "H46",
+"condicion": "CC7 Profesores",
+"tema": "Perfil del profesor del programa",
+"dato": "Título equivalente o superior al nivel del programa, mínimo 4 años de experiencia profesional y 2 de docencia (Acuerdo 10 del 26-ene-2023, Reglamento Docente).",
+"pagina": "p. 121"
+},
+{
+"id": "H47",
+"condicion": "CC7 Profesores",
+"tema": "Planta profesoral",
+"dato": "24 profesores en 2025-2: 7 de tiempo completo, 13 de medio tiempo y 4 de tiempo parcial.",
+"pagina": "p. 122"
+},
+{
+"id": "H48",
+"condicion": "CC7 Profesores",
+"tema": "Formación académica",
+"dato": "Aumento de profesores con especialización y maestría desde 2023; perfiles jurídicos, forenses, de psicología y TIC coherentes con las áreas del plan de estudios.",
+"pagina": "pp. 123–124"
+},
+{
+"id": "H49",
+"condicion": "CC7 Profesores",
+"tema": "Escalafón",
+"dato": "El 50 % de los profesores está en Asistente I; hay también profesores en Asistente II y III y en Asociado I y III.",
+"pagina": "p. 129"
+},
+{
+"id": "H50",
+"condicion": "CC7 Profesores",
+"tema": "Participación profesoral",
+"dato": "Representantes de profesores 2026-2027 elegidos por votación interna; posesión en las sesiones de Consejo de marzo de 2026.",
+"pagina": "p. 123"
+},
+{
+"id": "H51",
+"condicion": "CC7 Profesores",
+"tema": "Desarrollo profesoral",
+"dato": "Plan de Desarrollo y Cualificación Profesoral articulado con el PDI 2025–2030 y el Reglamento de Profesores (Anexo 7.2).",
+"pagina": "p. 129"
+},
+{
+"id": "H52",
+"condicion": "CC8 Medios educativos",
+"tema": "Asignación presupuestal",
+"dato": "1 % de los ingresos por matrícula para medios educativos y equipos de laboratorio, y 1 % adicional para recursos bibliográficos.",
+"pagina": "p. 130"
+},
+{
+"id": "H53",
+"condicion": "CC8 Medios educativos",
+"tema": "Inversión ejecutada",
+"dato": "Cerca de $62 millones entre 2020 y 2025 (aprox. $24 millones en 2023 y $15 millones en 2024).",
+"pagina": "p. 130"
+},
+{
+"id": "H54",
+"condicion": "CC8 Medios educativos",
+"tema": "Biblioteca",
+"dato": "Colección general de 1.823 títulos y 2.169 volúmenes; 8 puntos de libre consulta; convenios interbibliotecarios; suscripción a vLex Global y vLex Colombia. La Tabla 49 detalla recursos por área del plan.",
+"pagina": "pp. 131–132"
+},
+{
+"id": "H55",
+"condicion": "CC8 Medios educativos",
+"tema": "Escenarios especializados",
+"dato": "Dos laboratorios de informática, dos laboratorios especializados (Edmon Locard y Hans Gross), un cuarto de fotografía, sala de audiencias y consultorio.",
+"pagina": "pp. 133, 141–143"
+},
+{
+"id": "H56",
+"condicion": "CC8 Medios educativos",
+"tema": "Software",
+"dato": "Software licenciado y libre vinculado a asignaturas (por ejemplo QGIS, AutoCAD, Google Earth, GIMP y ToupView; Tabla 51).",
+"pagina": "pp. 132–133"
+},
+{
+"id": "H57",
+"condicion": "CC8 Medios educativos",
+"tema": "Ambiente virtual",
+"dato": "Plataforma Q10 como LMS y sistema de información académica desde 2025.",
+"pagina": "p. 62"
+},
+{
+"id": "H58",
+"condicion": "CC9 Infraestructura",
+"tema": "Sede",
+"dato": "Barrio San Felipe (Barrios Unidos), Bogotá; 1.585 m² construidos y capacidad para 400 personas por jornada; horario de lunes a viernes de 7:00 a 22:00 y sábados de 7:00 a 17:00.",
+"pagina": "p. 139"
+},
+{
+"id": "H59",
+"condicion": "CC9 Infraestructura",
+"tema": "Ampliación aprobada",
+"dato": "Cinco nuevas aulas y unidades sanitarias, aprobadas por el Acuerdo de Asamblea General 062 del 13-mar-2026, con inversión de $120 millones (Anexo 9.1).",
+"pagina": "pp. 140–141"
+},
+{
+"id": "H60",
+"condicion": "CC9 Infraestructura",
+"tema": "Accesibilidad",
+"dato": "Rampas de acceso y biblioteca trasladada al primer piso para personas con movilidad reducida.",
+"pagina": "pp. 143–144"
+},
+{
+"id": "H61",
+"condicion": "CC9 Infraestructura",
+"tema": "Hardware y conectividad",
+"dato": "Dos salas de sistemas con 39 computadores, 8 equipos de consulta en biblioteca, 8 portátiles para docentes y dos redes de banda ancha con operadores distintos.",
+"pagina": "p. 145"
+},
+{
+"id": "H62",
+"condicion": "CC9 Infraestructura",
+"tema": "Proyección de infraestructura",
+"dato": "2,5 % de la proyección financiera destinado a mejoramiento y crecimiento de la infraestructura (Anexo 9.2).",
+"pagina": "p. 143"
+}
+]
